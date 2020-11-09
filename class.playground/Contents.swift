@@ -60,15 +60,15 @@ func journalSort () {
         journal.sort {$0.averageMark > $1.averageMark}
     }
 }
-// journalSort()
-// journalOut()
+journalSort()
+journalOut()
 func journalSortSurname () {
     journal.forEach {_ in
         journal.sort (by:{$0.surname == $1.surname ?  $0.name < $1.name: $0.surname < $1.surname})
     }
 }
-//journalSortSurname()
-//journalOut()
+journalSortSurname()
+journalOut()
 
 var journal1: [Student] = journal
 
